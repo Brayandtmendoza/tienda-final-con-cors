@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← Volver</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Registrar Datos</h1>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Registrar Categoría
+        </div>
+        <div class="card-body">
+            <form id="form-categoria">
+                <div class="mb-3">
+                    <label for="categoria-nombre" class="form-label">Nombre de la Categoría</label>
+                    <input type="text" class="form-control" id="categoria-nombre" required>
+                </div>
+                <button type="submit" class="btn btn-success">Guardar Categoría</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Registrar Producto
+        </div>
+        <div class="card-body">
+            <form id="form-producto">
+                <div class="mb-3">
+                    <label for="producto-nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="producto-nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="producto-precio" class="form-label">Precio</label>
+                    <input type="number" step="0.01" class="form-control" id="producto-precio" required>
+                </div>
+                <div class="mb-3">
+                    <label for="producto-categoria" class="form-label">Categoría</label>
+                    <select class="form-select" id="producto-categoria" required></select>
+                </div>
+                <button type="submit" class="btn btn-success">Guardar Producto</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Registrar Imagen
+        </div>
+        <div class="card-body">
+            <form id="form-imagen">
+                <div class="mb-3">
+                    <label for="imagen-url" class="form-label">URL de la Imagen</label>
+                    <input type="url" class="form-control" id="imagen-url" required>
+                </div>
+                <div class="mb-3">
+                    <label for="imagen-producto" class="form-label">Producto</label>
+                    <select class="form-select" id="imagen-producto" required></select>
+                </div>
+                <button type="submit" class="btn btn-success">Guardar Imagen</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
